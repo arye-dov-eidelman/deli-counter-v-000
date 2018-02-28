@@ -6,7 +6,7 @@ def line(deli_line)
   result = 'The line is currently: '
   deli_line.each_with_index do |name, i|
     # binding.pry
-    result += "#{1+i}. #{name}"
+    result += "#{i}. #{name}"
     result += ', ' if i+1 == deli_line.length
   end
   puts result
