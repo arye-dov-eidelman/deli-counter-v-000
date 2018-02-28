@@ -5,7 +5,7 @@ def line(deli_line)
   end
   result = 'The line is currently: '
   deli_line.each_with_index do |name, i|
-    binding.pry
+    # binding.pry
     result += "#{i+1.to_s}. #{name}"
     result += ', ' if i+1 == deli_line.length
   end
