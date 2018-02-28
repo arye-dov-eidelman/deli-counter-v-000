@@ -7,7 +7,8 @@ def line(deli_line)
   deli_line.each_with_index do |name, i|
     # binding.pry
     result += "#{i+1}. #{name}"
-    result += ', 5555555555555' if i+1 == deli_line.length
+    i+1 == deli_line.length ? result += '.' : result += ', '
   end
   puts result
+
 end
